@@ -1,6 +1,8 @@
 <template>
-    <div @click="login">
-      <test></test>
+    <div>
+      <div @click="login">
+        <test></test>
+      </div>
       <test-module :address.sync="address" :ageAttr="ageAttr"></test-module>
     </div>
 </template>
