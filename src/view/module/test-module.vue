@@ -1,14 +1,10 @@
 <template>
     <div>
-      test-module
       <div>
         {{tempAddress}}
       </div>
       <div v-for="(item, index) in tempAgeAttr" :key='item'>
         {{item}} -- {{index}}
-      </div>
-      <div>
-        测试的自定义组件
       </div>
       <div style="width: 300px; height: 300px" ref="chart"></div>
     </div>

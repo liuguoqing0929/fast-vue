@@ -6,6 +6,8 @@ import router from './router'
 import axios from 'axios'
 import httpRequest from './request/http'
 import echarts from 'echarts'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.prototype.$echarts = echarts
 Vue.prototype.$http = httpRequest
@@ -14,6 +16,8 @@ Vue.prototype.$axios = axios // 全局注册，使用方法为:this.$axios
 // Vue.prototype.qs = qs // 全局注册，使用方法为:this.qs
 
 Vue.config.productionTip = false
+
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({
