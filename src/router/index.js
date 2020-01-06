@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import HelloWorld2 from '@/components/HelloWorld2'
 import Hello from '../view/hello'
+import Home from '../view/home/home'
 
 // const routerPush = Router.prototype.push
 // Router.prototype.push = function push (location) {
@@ -17,6 +18,11 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
+    },
+    {
+      path: '/Home',
+      name: 'Home',
+      component: Home
     },
     {
       path: '/HelloWorld2',

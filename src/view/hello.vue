@@ -1,6 +1,8 @@
 <template>
     <div>
-      <el-button type="primary">主要按钮1</el-button>
+      <div class="main" v-title data-title="fast-vue">
+      </div>
+      <el-button @click="home" type="primary">主要按钮1</el-button>
       <div @click="login">
         <test></test>
       </div>
@@ -45,6 +47,9 @@ export default {
       //   // handle error
       //   console.log(error)
       // })
+    },
+    home: function () {
+      this.$router.replace('/Home')
     }
   }
 }
