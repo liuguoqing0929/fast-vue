@@ -15,8 +15,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Hello',
+      component: Hello
     },
     {
       path: '/HelloWorld2',
@@ -24,9 +24,9 @@ export default new Router({
       component: HelloWorld2
     },
     {
-      path: '/Hello',
-      name: 'Hello',
-      component: Hello
+      path: '/HelloWorld',
+      name: 'HelloWorld',
+      component: HelloWorld
     }
   ]
 })

@@ -1,5 +1,7 @@
 <template>
   <div class="hello">
+    <div class="main" v-title data-title="登录">
+    </div>
     <div @click="hello2">
       跳转到2
     </div>

@@ -17,6 +17,13 @@ Vue.prototype.$axios = axios // 全局注册，使用方法为:this.$axios
 
 Vue.config.productionTip = false
 
+// 设置浏览器标题
+Vue.directive('title', {
+  inserted: function (el, binding) {
+    document.title = el.dataset.title
+  }
+})
+
 Vue.use(ElementUI)
 
 /* eslint-disable no-new */
