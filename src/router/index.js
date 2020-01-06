@@ -19,6 +19,26 @@ const routesAttr = [
   {path: '/HelloWorld2', name: 'HelloWorld2', component: HelloWorld2}
 ]
 
-export default new Router({
+const router = new Router({
   routes: routesAttr
 })
+
+router.beforeEach((to, from, next) => {
+  // if (to.matched.some(record => record.meta.requireAuth)) {  // 判断当前路由是否需要权限
+  //   if (sessionStorage.getItem("access_token")) { // 判断当前是否存在 token
+  //     next()
+  //   } else {
+  //     next({
+  //       path: '/login',
+  //       quiry: {
+  //         redirect: to.fullPath // 将跳转的路由path作为参数，登录成功后跳转到改路由
+  //       }
+  //     })
+  //   }
+  // } else {
+  //   next()
+  // }
+  next()
+})
+
+export default router
