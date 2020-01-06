@@ -21,7 +21,7 @@ export default {
     return {
       msg: '',
       address: '北京',
-      ageAttr: ['张三', '李四', '王五']
+      ageAttr: ['张三', '李四', '王五', '赵六']
     }
   },
   methods: {
