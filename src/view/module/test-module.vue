@@ -29,7 +29,6 @@ export default {
   methods: {
     initChat: function () {
       let myChart = this.$echarts.init(this.$refs.chart)
-      console.log(this.$refs.chart)
       myChart.setOption({
         title: { text: '在Vue中使用echarts' },
         tooltip: {},
