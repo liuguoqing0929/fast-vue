@@ -12,27 +12,13 @@ import Home from '../view/home/home'
 
 Vue.use(Router)
 
+const routesAttr = [
+  {path: '/', name: 'Hello', component: Hello},
+  {path: '/Home', name: 'Home', component: Home},
+  {path: '/HelloWorld', name: 'HelloWorld', component: HelloWorld},
+  {path: '/HelloWorld2', name: 'HelloWorld2', component: HelloWorld2}
+]
+
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello
-    },
-    {
-      path: '/Home',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/HelloWorld2',
-      name: 'HelloWorld2',
-      component: HelloWorld2
-    },
-    {
-      path: '/HelloWorld',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+  routes: routesAttr
 })
